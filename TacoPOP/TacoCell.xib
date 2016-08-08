@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11173.2" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPOP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="740" image="Brisket" translatesAutoresizingMaskIntoConstraints="NO" id="dmm-de-6xl"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="U0b-eD-Mx3">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="U0b-eD-Mx3" firstAttribute="top" secondItem="dmm-de-6xl" secondAttribute="bottom" constant="5" id="1xz-AL-g31"/>
+                <constraint firstItem="U0b-eD-Mx3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5V4-ki-qsl"/>
+                <constraint firstItem="dmm-de-6xl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DfT-cH-QfB"/>
+                <constraint firstItem="U0b-eD-Mx3" firstAttribute="top" secondItem="dmm-de-6xl" secondAttribute="bottom" constant="5" id="TRD-te-Iya"/>
+                <constraint firstAttribute="bottom" secondItem="U0b-eD-Mx3" secondAttribute="bottom" constant="5" id="hNG-YH-mVZ"/>
+                <constraint firstAttribute="trailing" secondItem="U0b-eD-Mx3" secondAttribute="trailing" id="nv2-lw-ck4"/>
+                <constraint firstAttribute="trailing" secondItem="dmm-de-6xl" secondAttribute="trailing" id="oBc-Ho-SDe"/>
+                <constraint firstItem="dmm-de-6xl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="rKZ-Hx-Bfq"/>
+            </constraints>
+            <size key="customSize" width="197" height="211"/>
+            <connections>
+                <outlet property="tacoImage" destination="dmm-de-6xl" id="ZM9-cW-ZuB"/>
+                <outlet property="tacoLabel" destination="U0b-eD-Mx3" id="u6M-DC-wX1"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="134.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brisket" width="1024" height="678"/>
+    </resources>
+</document>
